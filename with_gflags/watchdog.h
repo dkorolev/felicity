@@ -5,6 +5,7 @@
 #include <mutex>
 #include <thread>
 
+#include "../date_now.h"
 #include "../singleton.h"
 #include "../safe_ostream.h"
 
