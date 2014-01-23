@@ -1,5 +1,5 @@
 // safe_cout, safe_cerr : Thread-safe std::cout and std::cerr respectively.
-// Lock the mutex on construction, flush the stream and releas the mutex on destruction.
+// Lock the mutex on construction, flush the stream and release the mutex on destruction.
 // Returnable by wrapping the inner implementation into a unique_ptr. Not assignable by design.
 // Do not support std::endl.
 
