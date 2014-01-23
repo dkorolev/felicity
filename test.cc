@@ -3,5 +3,5 @@
 using namespace felicity;
 
 int main() {
-  safe_cout << "Test.\n";
+  safe_cout << "node.js Date.now() == " << date_now() << "\n";
 }

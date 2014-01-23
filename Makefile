@@ -3,7 +3,7 @@ CPP11=${CPP} -std=c++11
 
 all: binary
 
-binary: test.cc
+binary: test.cc *.h
 	${CPP11} -o $@ $< -lpthread
 
 clean:
