@@ -11,8 +11,8 @@
 
 #include <gflags/gflags.h>
 
-DEFINE_int32(watchdog_startup_delay_ms, 1000 * 3, "Watchdog start-up timeout.");
-DEFINE_int32(watchdog_period_ms, 1000 * 2, "Watchdog max. time between events.");
+DEFINE_int32(watchdog_startup_delay_ms, 1000 * 60, "Watchdog start-up timeout.");
+DEFINE_int32(watchdog_period_ms, 1000 * 60 * 10, "Watchdog max. time between events.");
 DEFINE_int32(watchdog_min_sleep_ms, 50, "Minimum time between watchdog awakenings.");
 DEFINE_bool(watchdog_debug, false, "Print watchdog debug messages.");
 
