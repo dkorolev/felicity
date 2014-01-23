@@ -3,8 +3,8 @@
 //
 // https://twitter.com/UniqueDima/status/420274974373343232
 
-#ifndef FELICITY_DATE_NOW
-#define FELICITY_DATE_NOW
+#ifndef FELICITY_DATE_NOW_H
+#define FELICITY_DATE_NOW_H
 
 #include <chrono>
 
