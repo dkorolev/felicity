@@ -2,6 +2,8 @@
 // for each subset of non-null fields that could be nullified.
 // Handles arithmetic types, empty std::string-s and "0"-s in enum classes.
 //
+// Used by Marvin for log entries grouping.
+//
 // Example:
 //
 // enum class is_mobile { all = 0,  mobile, desktop };
