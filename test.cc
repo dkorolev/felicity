@@ -1,8 +1,6 @@
 // This test is to confirm the code compiles.
 
-#include <gflags/gflags.h>
-
-#include "all_with_gflags.h"
+#include "all.h"
 
 using namespace felicity;
 
