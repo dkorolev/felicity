@@ -9,12 +9,22 @@
 #include "../singleton.h"
 #include "../safe_ostream.h"
 
-#include <gflags/gflags.h>
+#ifndef MARVIN_NO_GFLAGS
 
+#include <gflags/gflags.h>
 DEFINE_int32(watchdog_startup_delay_ms, 1000 * 60, "Watchdog start-up timeout.");
 DEFINE_int32(watchdog_period_ms, 1000 * 60 * 10, "Watchdog max. time between events.");
 DEFINE_int32(watchdog_min_sleep_ms, 50, "Minimum time between watchdog awakenings.");
 DEFINE_bool(watchdog_debug, false, "Print watchdog debug messages.");
+
+#else
+
+const int32_t FLAGS_watchdog_startup_delay_ms = 1000 * 60;
+const int32_t FLAGS_watchdog_period_ms = 1000 * 60 * 10;
+const int32_t FLAGS_watchdog_min_sleep_ms = 50;
+const bool FLAGS_watchdog_debug = false;
+
+#endif
 
 namespace felicity {
 
